@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consumo de APIs e JSON</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Curiosidades e Dados de Países 🌍</h1>
+  </header>
+
+  <main>
+    <!-- Seleção de País -->
+    <section id="country-section">
+      <h2>Selecione um País</h2>
+      <select id="country-select">
+        <option value="">Carregando países...</option>
+      </select>
+      <div id="country-details"></div>
+    </section>
+
+    <!-- Formulário Brasil API -->
+    <section id="api-section">
+      <h2>Consulta à Brasil API</h2>
+      <form id="api-form">
+        <label for="query">Digite sua consulta:</label>
+        <input type="text" id="query" placeholder="Ex.: CEP, CNPJ..." required>
+        <button type="submit">Consultar</button>
+      </form>
+      <div id="api-results"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Desenvolvido com ❤️ para a comunidade</p>
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
